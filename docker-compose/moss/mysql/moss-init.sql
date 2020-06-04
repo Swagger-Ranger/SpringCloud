@@ -4,8 +4,8 @@ CREATE DATABASE IF NOT EXISTS moss DEFAULT CHARACTER SET = utf8mb4;
 
 Use moss;
 
-SET NAMES utf8;
-SET FOREIGN_KEY_CHECKS = 0;
+SET NAMES utf8;-- 解决显示乱码问题
+SET FOREIGN_KEY_CHECKS = 0; --取消外键约束，避免因为外键无法修改删除表结构，SET FOREIGN_KEY_CHECKS = 1恢复设置外键约束
 
 -- ----------------------------
 --  Table structure for `t_app`
